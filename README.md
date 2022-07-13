@@ -1,1 +1,0 @@
-# parallaxdining.github.io
