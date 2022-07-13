@@ -1,4 +1,18 @@
+/* making responsive page */
 
+ @media screen and (max-width:960px) {     /* Adding breakpoint of 960px */
+     .col {
+         flex: 100%;
+         max-width: 80%;
+     }
+ }
+ 
+ @media screen and (max-width:600px) {    /* Adding breakpoint of 600px */
+     .col {
+         flex: 100%;
+         max-width: 100%;
+     }
+ }
   
 
     /* Adding a font from google fonts */
