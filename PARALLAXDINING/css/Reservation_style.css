@@ -1,0 +1,311 @@
+
+    /* Adding a font from google fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap');
+      
+    body{
+        overflow-x: hidden;
+        margin: 0;
+        color: white; 
+        font-family:'Exo', sans-serif;
+        background-color: black;
+        background-repeat:repeat-y;
+        background-size: cover;    
+        background-attachment: fixed;
+    }
+    .main{   
+        margin-top: 96px;
+        }
+
+    .newfont{
+        font-family:'Exo', sans-serif;}
+    .black{
+        color: black;
+        font-weight: 500;
+    }
+    .white{
+        color: white;
+    }
+    .clingHeads {
+       line-height: 0px;
+    }
+    .center{
+        text-align: center;
+    }
+    .headlarge{
+        font-size: 50px;
+    }
+
+    .subheading{
+        margin-top: 0; margin-bottom: 40px;
+        text-align: center;
+
+    }
+          /* adding special font */
+          .curvey{
+            font-family:'Great Vibes', cursive;
+             color: #ffb042;
+
+        }
+
+
+
+        .topnav {
+            text-transform: uppercase;
+            font-size: large;
+            font-family:  'Exo', sans-serif;
+            list-style-type: none ;
+            overflow:hidden;
+            background-color: black;
+            padding: 0px;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            text-decoration: none;
+            color: white;
+            margin: 0;
+             }   
+            .navig1{
+                color: white;
+                text-decoration: none;
+            }
+
+
+        h1,h3,h2,h4{
+            color: white;  
+            font-family:  'Exo', sans-serif;
+} 
+        
+        .closeheads{font-size: 15px ;
+            color: #c49b63;
+            padding-bottom: 0%;
+            line-height: 10px;
+             display: block;
+             text-align: center;
+        }
+
+      .topnav  li{
+            float:left;
+            padding-left: 25px;
+        }
+
+       .topnav li a{
+            display: block;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .topnav li a:hover{
+            color: #c49b63;
+            text-decoration: none;
+        }
+
+
+
+        /* styling section1- Heading of booking a table */
+        .section1{
+            background-image: url("../images/reservationbg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100%;
+            height: 83vh;
+    
+        }
+        .section1:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .welcome-text{
+            position: relative;
+        }
+
+        /* sytling section2- Booking Detail section */
+        .List1{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+
+        /* styling form- Form to take in the details of Customer*/
+         .booking-form{
+            margin-left: 300px;
+            margin-top: 42px;
+         }
+         form div{
+             padding-top: 10px;
+             padding-bottom: 10px;
+         }
+
+         form label{
+             font-size: 12px;
+         }
+         input{
+             font-family: inherit;
+             box-sizing: border-box;
+             font-size: 14px;
+             width: 100%;
+             display: block;
+             border: none;
+             color: #c49b63;
+             background:transparent;
+             border-bottom: 1px solid white;
+ }
+         
+         input:focus{
+            font-family: inherit;
+            font-size: 18px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            width: 100%;
+            display: block;
+            border: none;
+            color: white;
+            background:transparent;
+            border-bottom: 1px solid #c49b63;
+   
+        }
+        input:focus, textarea:focus, select:focus{
+            outline: none;
+        }
+
+
+        /* styling date cell */
+        input[type="date" i ]{
+            font-size: 16px;
+            color: white;
+        }
+     
+        input[type="date"]::-webkit-calendar-picker-indicator { 
+            color: #c49b63;
+            filter: invert(100%);
+                }
+       
+
+
+            
+        /* styling time of dinner */
+
+        .black_drop{
+            color: white;
+            font-family: inherit;
+            box-sizing: border-box;
+            font-size: 12   px;
+            background-color: black;   
+        }
+
+
+        /* STYLING NUMBER OF PEOPLE*/
+
+
+          .radio-item {
+            display:block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+          }
+          
+          /* Hide the browser's default radio button */
+          .radio-item input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+          }
+          
+          /* Create a custom radio button */
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            border: white solid 1px;
+            /* to make a circular radio button */
+            border-radius: 50%; 
+          }
+
+          
+          /* On mouse-over, add a grey background */
+          .radio-item:hover input ~ .checkmark {
+            background-color: black;
+            border: #c49b63 solid 1px;
+          }
+          
+          /* When the radio button is checked, add a golden background */
+          .radio-item input:checked ~ .checkmark {
+            background-color:#c49b63;
+            border: #c49b63 solid 1px;
+          }
+          
+          /* Create the indicator (the dot/circle - hidden when not checked) */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          
+          /* Show the indicator (dot/circle) when checked */
+          .radio-item input:checked ~ .checkmark:after {
+            display: block;
+          }
+
+          /* Style the indicator (dot/circle) */
+        .radio-item .checkmark:after {
+            top: 6px;
+            left: 6px;
+            
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: black;
+        }
+
+
+        /* STYLING THE SUBMIT BUTTON OF THE FORM*/
+        .button {
+            background-color: black;
+            border:white solid;
+            border-radius: 50px;
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 12px;
+          }
+          .button:hover {
+            background-color: black;
+            border:#c49b63 solid;
+            border-radius: 50px;
+            color: white;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+          }
+          .button:active{
+            background-color: #c49b63;
+            border:#c49b63 solid;
+            border-radius: 50px;
+            color: black;
+            font-weight: bolder;
+            padding: 5px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+          }

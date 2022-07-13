@@ -1,0 +1,266 @@
+ /* Adding a font from google fonts */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap');
+ * {
+     overflow-x: hidden; 
+     margin: 0;
+     color: white;
+     font-family: 'Exo', sans-serif;
+     background-repeat: repeat-y;
+     background-size: cover;
+ }
+ /* adding special font */
+ 
+ .curvey {
+     font-family: 'Great Vibes', cursive;
+     color: #c49b63;
+ }
+ 
+ .black {
+     color: black;
+     font-weight: 500;
+ }
+ /* Navigation bar */
+ 
+ .topnav {
+     text-transform: uppercase;
+     font-size: large;
+     font-family: 'Exo', sans-serif;
+     list-style-type: none;
+     overflow: hidden;
+     background-color: black;
+     padding: 0px;
+     position: fixed;
+     z-index: 100;
+     left: 0;
+     top: 0;
+     width: 100%;
+     text-decoration: none;
+     color: white;
+ }
+ 
+ .navig1 {
+     color: white;
+     text-decoration: none;
+ }
+ 
+ h1,
+ h3,
+ h2,
+ h4 {
+     color: white;
+     font-family: 'Exo', sans-serif;
+ }
+ 
+ .closeheads {
+     font-size: 15px;
+     color: #c49b63;
+     padding-bottom: 0%;
+     line-height: 10px;
+     display: block;
+     text-align: center;
+ }
+ 
+ .topnav li {
+     float: left;
+     padding-left: 25px;
+ }
+ 
+ .topnav li a {
+     display: block;
+     text-align: center;
+     padding: 30px 20px;
+ }
+ 
+ .topnav li a:hover {
+     color: #c49b63;
+     text-decoration: none;
+ }
+ /* STYLING THE SAVED TESTEMONIALS */
+ 
+ .testimonials h1 {
+     font-size: 100px !important; /* overriding other font-size property */
+ }
+ 
+ .testimonials {
+     padding: 40px 0;
+     background: #c49b63;
+     text-align: center;
+ }
+ 
+ .inner {
+     max-width: 1200px;
+     margin: auto; 
+     overflow: hidden; /* Overflow is clipped & rest of the content is invisible */
+     padding: 0 20px;
+ }
+ 
+ .border {
+     width: 160px;
+     height: 5px;
+     background: #6ab04c;
+     margin: 26px auto;
+ }
+ 
+ .row {
+     display: flex;
+     flex-wrap: wrap; /* flex-items are wrapped */
+     justify-content: center;
+ }
+ 
+ .col {
+     flex: 33.33%;
+     max-width: 33.33%;
+     box-sizing: border-box;
+     padding: 15px;
+ }
+ 
+ .testmonial {
+     background: #fff;
+     padding: 30px;
+ }
+ 
+ .testimonial img {
+     border-radius: 50%;
+ }
+ 
+ .name {
+     font-size: 20px;
+     margin: 20px 0;
+ }
+ 
+ .stars {
+     color: yellow;
+     margin-bottom: 20px;
+ }
+
+ /* making responsive page */
+
+ @media screen and (max-width:960px) {     /* Adding breakpoint of 960px */
+     .col {
+         flex: 100%;
+         max-width: 80%;
+     }
+ }
+ 
+ @media screen and (max-width:600px) {    /* Adding breakpoint of 600px */
+     .col {
+         flex: 100%;
+         max-width: 100%;
+     }
+ }
+
+ /* styling the review input container */
+ 
+ .container_back {
+     background-image: url("../images/christin-hume-Hcfwew744z4-unsplash.jpg");
+ }
+ 
+ .container {
+     width: 360px;
+     opacity: 0.7;
+     justify-content: center;
+     scroll-padding: 60px;
+     margin: auto;
+ }
+ 
+ .container h1 {
+     opacity: 1 !important;
+     font-family: 'Great Vibes', cursive;
+     color: #c49b63;
+     font-size: 50px;
+     text-shadow: 2px 1px 2px black;
+ }
+ 
+ .container form {
+     text-align: center;
+     padding: 25px 20px;
+ }
+ 
+ form h1 {
+     padding: 10px 0px;
+     color: #c49b63;
+     font-weight: 100;
+ }
+ 
+ form .id {
+     position: relative;
+ }
+ 
+ .id i {
+     position: absolute;
+     font-size: 20px;
+     top: 50%;
+     right: 20px;
+ }
+ 
+ form input {
+     width: 94%;
+     height: 45px;
+     background: #c49b63;
+     font-size: 20px;
+ }
+ 
+ form textarea {
+     background: #c49b63;
+     font-size: 20px;
+     width: 95%;
+ }
+ 
+ form button {
+     margin-top: 5px;
+     border: none;
+     background: #ffffff;
+     color: #c49b63;
+     padding: 10px 0;
+     width: 100%;
+     font-size: 30px;
+     font-weight: 800;
+     cursor: pointer;
+     border-radius: 3px;
+ }
+ 
+ form input:focus,
+ form textarea:focus {
+     border: 1px solid #ffffff;
+     color: #ffffff;
+     transition: all 0.3s ease;
+ }
+ 
+ form input:focus::placeholder,
+ form textarea:focus::placeholder {
+     padding-left: 4px;
+     border: 1px solid #ffffff;
+     color: #ffffff;
+     transition: all 0.3s ease;
+ }
+ 
+ form input:focus+i {
+     color: #ffffff;
+     transition: all 0.3s ease;
+ }
+  
+ .fa-star:hover {
+     color: #ffff00;
+     transform: translateY(2px);
+ }
+ 
+ .b1:hover~.fa-star {
+     color: #ffff00;
+ }
+ 
+ .b2:hover~.fa-star {
+     color: #ffff00;
+ }
+ 
+ .b3:hover~.fa-star {
+     color: #ffff00;
+ }
+ 
+ .b4:hover~.fa-star {
+     color: #ffff00;
+ }
+ 
+ .b5:hover~.fa-star {
+     color: #ffff00;
+ }

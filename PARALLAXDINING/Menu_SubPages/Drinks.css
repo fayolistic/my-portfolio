@@ -1,0 +1,233 @@
+/* Adding a font from google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap");
+body {
+    overflow-x: hidden;
+    margin: 0;
+    color: white;
+    font-family: "Exo", sans-serif;
+    background-image: url(https://images.unsplash.com/photo-1573551565922-aec98de55802?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.newfont {
+    font-family: "Exo", sans-serif;
+}
+
+.black {
+    color: black;
+    font-weight: 500;
+}
+
+.white {
+    color: white;
+}
+
+.clingHeads p {
+    line-height: 0px;
+}
+
+.headcenter {
+    text-align: center;
+}
+
+.jug {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* Navigation bar */
+
+.topnav {
+    text-transform: uppercase;
+    font-size: large;
+    font-family: "Exo", sans-serif;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    padding: 0px;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.navig1 {
+    color: white;
+    text-decoration: none;
+}
+
+h1,
+h3,
+h2,
+h4 {
+    color: white;
+    font-family: "Exo", sans-serif;
+}
+
+.closeheads {
+    font-size: 15px;
+    color: #c49b63;
+    padding-bottom: 0%;
+    line-height: 10px;
+    display: block;
+    text-align: center;
+}
+
+.topnav li {
+    float: left;
+    padding-left: 25px;
+}
+
+.topnav li a {
+    display: block;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.topnav li a:hover {
+    color: #c49b63;
+    text-decoration: none;
+}
+
+
+/* adding special font */
+
+.curvey {
+    font-family: "Great Vibes", cursive;
+    color: #c49b63;
+}
+
+h2 {
+    text-align: justify;
+    font-size: 120px;
+}
+
+
+/* changing color property of sub menu heading */
+
+.pulsate {
+    animation: pulsate 5s ease-in-out;
+    animation-iteration-count: infinite;
+    opacity: initial;
+    color: rgb(0, 0, 0);
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        color: black;
+        opacity: unset;
+    }
+    50% {
+        color: grey;
+        opacity: inherit;
+    }
+    75% {
+        color: white;
+        opacity: revert;
+    }
+    100% {
+        color: #c49b63;
+        opacity: revert;
+    }
+}
+
+
+/* different division */
+
+.Container {
+    background-color: black;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: initial;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1000px;
+    border-radius: 30px;
+    margin: 7px;
+}
+
+.list {
+    text-align: center;
+    border: #c49b63 solid 1px;
+    border-radius: 10%;
+    margin: 40px;
+    padding: 5px;
+}
+
+#img {
+    width: 100%;
+    border-radius: 10%;
+}
+
+#listi {
+    text-align: center;
+    color: #c49b63;
+    font-size: 25px;
+    font-weight: lighter bold;
+    font-family: "Great Vibes", cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+#list-2 {
+    width: 350px;
+    border: #c49b63 solid 1px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+h4,
+h5 {
+    color: white;
+}
+
+td {
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+
+/* offer zone*/
+
+.Offers {
+    background-color: #c49b63;
+    text-align: center;
+    height: 150px;
+}
+
+.Offers ul {
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#item-1,
+#item-2,
+#item-3 {
+    margin: 40px 127px 40px 127px;
+}
+
+h5 {
+    color: #c49b63;
+}

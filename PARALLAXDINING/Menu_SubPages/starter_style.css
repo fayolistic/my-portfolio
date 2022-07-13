@@ -1,0 +1,207 @@
+/* Adding a font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap");
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  color: white;
+  font-family: "Exo", sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2067&q=80);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+/* .main{   
+        margin-top: 96px;
+        } */
+
+.newfont {
+  font-family: "Exo", sans-serif;
+}
+.black {
+  color: black;
+  font-weight: 500;
+}
+.white {
+  color: white;
+}
+.clingHeads p {
+  line-height: 0px;
+}
+.headcenter {
+  text-align: center;
+}
+
+/* .subheading{
+        margin-top: 0; margin-bottom: 40px;
+        text-align: center;
+
+    } */
+
+/* .material-icon{
+        color: #c49b63;
+    }
+ */
+
+/* Navigation bar */
+
+.topnav {
+  text-transform: uppercase;
+  font-size: large;
+  font-family: "Exo", sans-serif;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+  padding: 0px;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+.navig1 {
+  color: white;
+  text-decoration: none;
+}
+
+h1,
+h3,
+h2,
+h4 {
+  color: white;
+  font-family: "Exo", sans-serif;
+}
+
+.closeheads {
+  font-size: 15px;
+  color: #c49b63;
+  padding-bottom: 0%;
+  line-height: 10px;
+  display: block;
+  text-align: center;
+}
+
+.topnav li {
+  float: left;
+  padding-left: 25px;
+}
+
+.topnav li a {
+  display: block;
+  text-align: center;
+  padding: 30px 20px;
+}
+.topnav li a:hover {
+  color: #c49b63;
+  text-decoration: none;
+}
+
+/* adding special font */
+.curvey {
+  font-family: "Great Vibes", cursive;
+  color: #c49b63;
+}
+
+h2 {
+  text-align: justify;
+  font-size: 120px;
+}
+
+.pulsate {
+  animation: pulsate 5s ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: initial;
+  color: rgb(0, 0, 0);
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    color: black;
+    opacity: unset;
+  }
+  50% {
+    color: grey;
+    opacity: inherit;
+  }
+  75% {
+    color: white;
+    opacity: revert;
+  }
+  100% {
+    color: #c49b63;
+    opacity: revert;
+  }
+}
+
+table {
+  width: 50%;
+  height: 100%;
+  background-color: #c49b63;
+  border-radius: 30px;
+  border: rgb(0, 0, 0) solid 2px;
+}
+
+th {
+  color: black;
+  font-family: "Great Vibes", cursive ;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.recipes {
+  background-color: gray;
+}
+
+td {
+  font-size: 19px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+#img {
+  height: 250px ;
+  width: 250px;
+  border-radius: 50%;
+
+}
+
+p {
+  font-size: 15px;
+  font-family: "Exo", sans-serif;
+  color: lightyellow;
+}
+
+
+.Offers{
+    background-color:#c49b63;
+    text-align: center;
+    height: 150px;
+}
+
+.Offers ul{
+    list-style-type: none;
+    display: flex;
+    padding-inline-start: 0px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+#item-1 ,#item-2, #item-3{
+    margin: 40px 127px 40px 127px ;
+}
+
+
