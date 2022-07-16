@@ -2,83 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap');
   
     
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
+    
+    font-family: 'Exo', sans-serif;
+    margin:0em;
+    color: white;
+    font-weight: bolder ;
+    overflow-x: hidden;
+}
+.section2{
     background-image: url(../images/careersbg.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Exo', sans-serif;
-    margin-top: 150px;
-    color: white;
-    font-weight: bolder ;
+    padding: 5%;
 }
 
  /* adding special font */
  .curvey{
     font-family:'Great Vibes', cursive;
      color: #c49b63;
+     margin:0em;
     }
-
-
- /* Navigation bar */
-
- .topnav {
-    text-transform: uppercase;
-    font-size: large;
-    font-family:  'Exo', sans-serif;
-    list-style-type: none ;
-    overflow:hidden;
-    background-color: black;
-    padding: 0px;
-    position: fixed;
-    z-index: 100;
-    left: 0;
-    top: 0;
-    width: 100%;
-    text-decoration: none;
-    color: white;
-    margin: 0;
-     }   
-    .navig1{
-        color: white;
-        text-decoration: none;
-    }
-
-
-h3,h2,h4{
-    color: white;  
-    font-family:  'Exo', sans-serif;
-} 
-
-.closeheads{font-size: 15px ;
-    color: #c49b63;
-    padding-bottom: 0%;
-    line-height: 10px;
-     display: block;
-     text-align: center;
-}
-
-.topnav  li{
-    float:left;
-    padding-left: 25px;
-}
-
-.topnav li a{
-    display: block;
-    text-align: center;
-    padding: 30px 20px;
-}
-.topnav li a:hover{
-    color: #c49b63;
-    text-decoration: none;
-}
-
-
-
 
 /* STYLING INTRO OF THIS PAGE */
 .JoinUsIntro{
@@ -91,7 +37,10 @@ h3,h2,h4{
     font-size: small;
     font-size: 5em;
     text-shadow: 5px 1px 2px black;
+    padding-top: 5%;
 }
+
+
 
 
 
@@ -278,4 +227,41 @@ button:hover{
     padding: 0 22px;
     font-size: 16px;
     color: #555;
+}
+
+@media screen  and (max-width:600px){
+    .JoinUsIntro h1{
+        font-size: 4em;
+    }
+    
+    .JoinUsIntro p{
+        font-size: 0.8em;
+    }
+    .regform{
+        width: auto;
+    }
+    .regform h1{
+        font-size: 1.3rem;
+    }
+    .main{
+        width: auto;
+    }
+  
+    .firstname,.address,.email,.number,.option,.file{
+        position: inherit;
+        margin-left:1em ;
+        width: auto;
+    }
+    .code{
+        position: inherit;
+        margin-left:1em ;
+    }
+
+    .firstlabel,.area-code,.phone-number{  
+        position: inherit;  
+        margin-left: 25px;
+        margin-top: 30px;}
+        button{
+            margin-top: 2em;
+        }
 }

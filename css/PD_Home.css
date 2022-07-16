@@ -12,7 +12,6 @@
         background-image: url(https://images.unsplash.com/photo-1529753253655-470be9a42781?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80);
         background-repeat:repeat-y;
         background-size: cover;
-
     
     }
 
@@ -47,59 +46,6 @@
         color: #c49b63;
     }
  */
-    /* Navigation bar */
-
-        .topnav {
-            text-transform: uppercase;
-            font-size: large;
-            font-family:  'Exo', sans-serif;
-            list-style-type: none ;
-            overflow:hidden;
-            background-color: black;
-            padding: 0px;
-            position: fixed;
-            z-index: 100;
-            left: 0;
-            top: 0;
-            width: 100%;
-            text-decoration: none;
-            color: white;
-             }   
-            .navig1{
-                color: white;
-                text-decoration: none;
-            }
-
-
-        h1,h3,h2,h4{
-            color: white;  
-            font-family:  'Exo', sans-serif;
-} 
-        
-        .closeheads{font-size: 15px ;
-            color: #c49b63;
-            padding-bottom: 0%;
-            line-height: 10px;
-             display: block;
-             text-align: center;
-        }
-
-      .topnav  li{
-            float:left;
-            padding-left: 25px;
-        }
-
-       .topnav li a{
-            display: block;
-            text-align: center;
-            padding: 30px 20px;
-        }
-        .topnav li a:hover{
-            color: #c49b63;
-            text-decoration: none;
-        }
-
-
         /* adding special font */
         .curvey{
             font-family:'Great Vibes', cursive;
@@ -110,16 +56,20 @@
         /* Image Slider */
 
         .carousel-item{
-            height: 100vh;
+            height: 100%;
+            padding: 0em;
+            margin: 0em;
         }
         .curvey {
             font-family: "Great Vibes",cursive;
             font-size: 40px;
             color: #c49b63;
+
         }
         .carousel-caption {
             position: absolute;
             bottom: 70%;
+            padding: 0em;
             left: 20%;
             color: white;
             text-shadow: 0 1px 2px rgba(0,0,0,.6);
@@ -136,26 +86,19 @@
         }
 
         /* Styling OUR STORY section*/
-        .section2{    
-            position: relative;
+        .section2{
+            background-image: url(https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80);
+           background-size: cover;
+           background-attachment: fixed;
         }
-         
-          
-        #leftHalf{
-            text-align: left;
-            height: 20%;
-             }   
-                  
              .ourstory-text {
-                position: absolute;
-                bottom: 200px;
-                right: 200px;
-                left: 500px;
                 opacity: 0.8;
+               text-align: justify;
                 background-color: black;
                 color: white;
-                padding: 40px;
+                padding: 5% 30% ;
              }
+
         /* Styling OUR SERVICES    */
         .section3{
             background-color:#c49b63; 
@@ -173,12 +116,13 @@
         }
     
         .service-boxes img{
-            width: 170px;
-            height: 170px; 
+            width: 100%;
+            height: auto;
+        
             position: relative;
             z-index: 0;
             border: 2px solid black;
-            padding: 20px 20px 20px 20px;
+            padding: 7%;
         }
         .service-boxes img:hover {
             transform: rotate(360deg);
@@ -201,23 +145,28 @@
         }
         .location-container{
             display: flex;
+            padding-bottom: 10%;
+
 
         }
 
-        iframe{
-            border: 1px solid black; 
-            border-radius: 50px;
-        }
       
         .location-map{
             padding-left: 200px;
             padding-top: 40px;
-
         }
+
+        .location-map iframe{
+            width: 150%;
+            height: 150%;
+            border: 1px solid black; 
+            border-radius: 50px;
+        }
+        
         .location-text{
             color: white; 
             font-weight:bold;
-            padding-left: 150px;
+            padding-left: 20%;
             padding-top: 120px;
         }
         .textshadow{
@@ -237,11 +186,12 @@
         }
         
         
-       ul{
+       footer ul{
             list-style-type: none;
             display: flex;
             padding-inline-start: 0px;
             text-align: center;
+            margin: 0em;
         }
 
 
@@ -316,8 +266,112 @@
         }
 
 
+/* navbar in mobile screen */
+@media screen and (max-width:600px)
+{
+    body{
+        width: 100%;
+        position:static;
+    }
 
+     
+        /* Image Slider */
 
+        .carousel-item{
+            height: 100%;
+            padding: 0em;
+            margin: 0em;
+            font-size: 1em;
+        }
+    
+        .carousel-caption {
+         
+            bottom: 60%;
+            padding: 0em;
+            left: 20%;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,.6);
+        }
+        .carousel-caption h3{
+            font-size: 0.7em;
+        }
+        .carousel-caption .curvey{
+            font-size: 2em;
+        }
+
+   
+        /* our story */
+   
+        .ourstory-text {
+           
+            
+           
+            padding: 10% 20% ;
+         }
+                 
+            .ourstory-text .subheading{
+            margin-bottom: 0.3em;
+
+            }
+            .ourstory-text h3{
+                font-size: 1.2em;
+                
+            }
+            .ourstory-text .newfont{
+                font-size: 0.85em ;
+                text-align: justify;
+            }
+            
+
+          
+            
+            /* our services */
+            .service-boxes{
+                display: block;
+                align-self: center;
+                padding-bottom: 2em;
+            }
+            .box1,.box2,.box3{
+                margin: 0em 0em 0em 0em;
+                text-align: center;
+
+            }
+            .service-boxes img{
+                width: 25%;
+                height: auto;
+            }
+            .service-boxes p{
+                padding-left: 5em;
+                padding-right: 5em;
+            }
+
+            /* location */
+
+            .location-container{
+                display: block;
+            }
+            .location-map{
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+            
+            .location-map{
+                padding: 0em;
+                text-align: center;
+            }
+    
+            .location-map iframe{
+                width: 80%;
+                border: 1px solid black; 
+                border-radius: 50px;
+            }
+            .location-text{
+                padding: 0em;
+                text-align: center;
+            }
+
+           
+}
 
 
 

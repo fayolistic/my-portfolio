@@ -89,7 +89,30 @@
             font-size: 13px;
         }
 
-
+        /* for mobile screens */
+        @media screen and (max-width:650px){
+           
+             footer ul{
+                display: block;
+                padding-bottom: 2em;
+            
+            }
+            footer{
+             width: 100%;
+             height: 100%;   
+            }
+            .footerli{
+                margin: 0em;
+                padding-left: 2em;
+                padding-top: 2em;
+                    }
+            .li1 .newfont ,.li2 .newfont,.li3 .newfont{
+                margin:0em ;
+            }
+            .li1, .li2{
+                text-align: left;
+            }
+        }
 
 
 

@@ -2,13 +2,16 @@
  
  @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200&display=swap');
  * {
-     overflow-x: hidden; 
      margin: 0;
-     color: white;
      font-family: 'Exo', sans-serif;
      background-repeat: repeat-y;
      background-size: cover;
  }
+ body{
+    overflow-x: hidden;
+ }
+
+
  /* adding special font */
  
  .curvey {
@@ -20,71 +23,17 @@
      color: black;
      font-weight: 500;
  }
- /* Navigation bar */
- 
- .topnav {
-     text-transform: uppercase;
-     font-size: large;
-     font-family: 'Exo', sans-serif;
-     list-style-type: none;
-     overflow: hidden;
-     background-color: black;
-     padding: 0px;
-     position: fixed;
-     z-index: 100;
-     left: 0;
-     top: 0;
-     width: 100%;
-     text-decoration: none;
-     color: white;
- }
- 
- .navig1 {
-     color: white;
-     text-decoration: none;
- }
- 
- h1,
- h3,
- h2,
- h4 {
-     color: white;
-     font-family: 'Exo', sans-serif;
- }
- 
- .closeheads {
-     font-size: 15px;
-     color: #c49b63;
-     padding-bottom: 0%;
-     line-height: 10px;
-     display: block;
-     text-align: center;
- }
- 
- .topnav li {
-     float: left;
-     padding-left: 25px;
- }
- 
- .topnav li a {
-     display: block;
-     text-align: center;
-     padding: 30px 20px;
- }
- 
- .topnav li a:hover {
-     color: #c49b63;
-     text-decoration: none;
- }
  /* STYLING THE SAVED TESTEMONIALS */
  
  .testimonials h1 {
      font-size: 100px !important; /* overriding other font-size property */
+     padding-top: 0.8em;
  }
  
  .testimonials {
      padding: 40px 0;
      background: #c49b63;
+     color:white;
      text-align: center;
  }
  
@@ -130,7 +79,7 @@
  }
  
  .stars {
-     color: yellow;
+     color: white;
      margin-bottom: 20px;
  }
 
@@ -141,6 +90,10 @@
          flex: 100%;
          max-width: 80%;
      }
+     .testimonials h1 {
+        font-size: 100px !important; /* overriding other font-size property */
+        padding-top: 1em;
+    }
  }
  
  @media screen and (max-width:600px) {    /* Adding breakpoint of 600px */
@@ -148,6 +101,10 @@
          flex: 100%;
          max-width: 100%;
      }
+     .testimonials h1 {
+        font-size: 100px !important; /* overriding other font-size property */
+        padding-top:0em;
+    }
  }
 
  /* styling the review input container */

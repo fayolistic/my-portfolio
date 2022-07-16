@@ -12,6 +12,9 @@
         background-size: cover;    
         background-attachment: fixed;
     }
+    h1{
+        font-size:100px;
+    }
     .main{   
         margin-top: 96px;
         }
@@ -45,59 +48,6 @@
             font-family:'Great Vibes', cursive;
              color: #ffb042;
 
-        }
-
-
-
-        .topnav {
-            text-transform: uppercase;
-            font-size: large;
-            font-family:  'Exo', sans-serif;
-            list-style-type: none ;
-            overflow:hidden;
-            background-color: black;
-            padding: 0px;
-            position: fixed;
-            z-index: 100;
-            left: 0;
-            top: 0;
-            width: 100%;
-            text-decoration: none;
-            color: white;
-            margin: 0;
-             }   
-            .navig1{
-                color: white;
-                text-decoration: none;
-            }
-
-
-        h1,h3,h2,h4{
-            color: white;  
-            font-family:  'Exo', sans-serif;
-} 
-        
-        .closeheads{font-size: 15px ;
-            color: #c49b63;
-            padding-bottom: 0%;
-            line-height: 10px;
-             display: block;
-             text-align: center;
-        }
-
-      .topnav  li{
-            float:left;
-            padding-left: 25px;
-        }
-
-       .topnav li a{
-            display: block;
-            text-align: center;
-            padding: 30px 20px;
-        }
-        .topnav li a:hover{
-            color: #c49b63;
-            text-decoration: none;
         }
 
 
@@ -283,6 +233,9 @@
             text-align: center;
             text-decoration: none;
             font-size: 12px;
+            font-family:'Exo', sans-serif;
+            width: 100%;
+        
           }
           .button:hover {
             background-color: black;
@@ -309,3 +262,23 @@
             font-size: 16px;
             cursor: pointer;
           }
+
+
+          /* for smaller device */
+    @media screen and (max-width:900px){
+            h1{
+                font-size: 1em;
+            }
+          
+          .section1{
+            height:50vh;
+          }
+        .List1{
+            display: block;
+        }
+        .booking-form{
+            margin: 2em 9em;
+        }
+    }
+
+        
