@@ -5,6 +5,7 @@
           background-color: black;
           font-family: 'Exo', sans-serif;
           font-size: 1rem;
+overflow-x: hidden;
       }
    
 /* adding special font */
