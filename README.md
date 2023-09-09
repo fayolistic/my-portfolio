@@ -16,7 +16,7 @@ Have a look: https://ayushichoudhary-19.github.io/parallaxdining.github.io/
   <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML" style="margin: 10px;">
   <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS" style="margin: 10px;">
   <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="JavaScript (JS)" style="margin: 10px;">
-  <img src="https://img.icons8.com/color/96/000000/firebase.png" alt="Firebase" style="margin: 10px;">
+  <img src="https://img.icons8.com/color/96/000000/php.png" alt="Firebase" style="margin: 10px;">
   <img src="https://img.icons8.com/color/96/000000/postgreesql.png" alt="PostgreSQL" style="margin: 10px;">
   <img src="https://img.icons8.com/color/96/000000/visual-studio-code-2019.png" alt="VS Code" style="margin: 10px;">
 </p>
